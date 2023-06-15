@@ -1,11 +1,13 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
-import { charmander } from './bases/04-injection'
+import { charmander } from './bases/06-decorators-2'
+// import { charmander } from './bases/05-decorators'
+// import { charmander } from './bases/04-injection'
 // import { charmander } from './bases/02-objects'
 // import { charmander } from './bases/03-clases'
 // import  { name, age } from './bases/01-types'
-charmander
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
