@@ -21,7 +21,7 @@ export class Pokemon {
         console.log(`${ this.name }, ${ this.name }`);
     }
 
-    async getMovies(): Promise<Move[]> {
+    async getMoves(): Promise<Move[]> {
         // const moves = 10;
 
         const { data } = await axios.get<PokeapiResponse>('https://pokeapi.co/api/v2/pokemon/4');
@@ -37,4 +37,4 @@ export const charmander = new Pokemon( 4, 'Charmander' );
 
 // console.log(charmander.getMovies());
 
-charmander.getMovies();
+charmander.getMoves();
